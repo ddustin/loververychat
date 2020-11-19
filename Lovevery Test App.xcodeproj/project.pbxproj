@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		586D95082566FF7B000321CB /* MessagesPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 586D95072566FF7B000321CB /* MessagesPage.m */; };
 		586D950D2566FF88000321CB /* NewMessagePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 586D950C2566FF88000321CB /* NewMessagePage.m */; };
+		586D9515256703B3000321CB /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 586D9514256703B3000321CB /* Messages.m */; };
 		58FBB10B2566FA03000477E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FBB10A2566FA03000477E2 /* AppDelegate.m */; };
 		58FBB10E2566FA03000477E2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FBB10D2566FA03000477E2 /* SceneDelegate.m */; };
 		58FBB1142566FA03000477E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FBB1122566FA03000477E2 /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 		586D95072566FF7B000321CB /* MessagesPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesPage.m; sourceTree = "<group>"; };
 		586D950B2566FF88000321CB /* NewMessagePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewMessagePage.h; sourceTree = "<group>"; };
 		586D950C2566FF88000321CB /* NewMessagePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewMessagePage.m; sourceTree = "<group>"; };
+		586D9513256703B3000321CB /* Messages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Messages.h; sourceTree = "<group>"; };
+		586D9514256703B3000321CB /* Messages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Messages.m; sourceTree = "<group>"; };
 		58FBB1062566FA03000477E2 /* Lovevery Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lovevery Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FBB1092566FA03000477E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58FBB10A2566FA03000477E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,15 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
+		586D95122567039D000321CB /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				586D9513256703B3000321CB /* Messages.h */,
+				586D9514256703B3000321CB /* Messages.m */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
 		58FBB0FD2566FA03000477E2 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +105,7 @@
 			children = (
 				58FBB1232566FA11000477E2 /* AppDelegate */,
 				58FBB11A2566FA05000477E2 /* Info.plist */,
+				586D95122567039D000321CB /* Messages */,
 				58FBB12A2566FA39000477E2 /* Misc */,
 				586D951025670031000321CB /* Pages */,
 				58FBB1252566FA18000477E2 /* SceneDelegate */,
@@ -207,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586D950D2566FF88000321CB /* NewMessagePage.m in Sources */,
+				586D9515256703B3000321CB /* Messages.m in Sources */,
 				58FBB10B2566FA03000477E2 /* AppDelegate.m in Sources */,
 				586D95082566FF7B000321CB /* MessagesPage.m in Sources */,
 				58FBB11C2566FA05000477E2 /* main.m in Sources */,

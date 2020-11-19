@@ -6,12 +6,15 @@
 //
 
 #import "MessagesPage.h"
+#import "Messages.h"
+
+#define UNUSED __attribute__((unused))
 
 @interface MessagesPage ()
 
-@property (weak) UITableView *tableView;
+@property (weak) IBOutlet UITableView *tableView;
 
-@property (strong) NSArray *messages;
+@property (strong) NSDictionary *messages;
 
 @end
 
@@ -21,14 +24,70 @@
 {
     [super viewDidAppear:animated];
     
-    // TODO: Load the messages
+    __weak MessagesPage *weakSelf = self;
+    
+    [Messages.shared loadMessages:self.user result:^(NSDictionary *result) {
+        
+        MessagesPage *strongSelf = weakSelf;
+        
+        strongSelf.messages = result;
+        
+        [strongSelf.tableView reloadData];
+    }];
 }
 
 - (NSString*)userFor:(NSIndexPath*)indexPath
 {
-    // TODO: Return the user
+    NSInteger counter = indexPath.row;
+    
+    for(NSString *user in self.messages)
+        for(NSDictionary *message UNUSED in self.messages[user])
+            if(0 == counter--)
+                return user;
     
     return nil;
+}
+
+- (NSDictionary*)payloadFor:(NSIndexPath*)indexPath
+{
+    NSInteger counter = indexPath.row;
+    
+    for(NSString *user in self.messages)
+        for(NSDictionary *message in self.messages[user])
+            if(0 == counter--)
+                return message;
+    
+    return nil;
+}
+
+- (NSInteger)numberOfPayloads
+{
+    NSInteger counter = 0;
+    
+    for(NSString *user in self.messages)
+        counter += [self.messages[user] count];
+    
+    return counter;
+}
+
+- (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self numberOfPayloads];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Message"];
+    
+    UILabel *user = [cell viewWithTag:1];
+    UILabel *subject = [cell viewWithTag:2];
+    UILabel *message = [cell viewWithTag:3];
+    
+    user.text = [NSString stringWithFormat:@"%@ says:", [self userFor:indexPath]];
+    subject.text = [NSString stringWithFormat:@"subject: %@", [self payloadFor:indexPath][@"subject"]];
+    message.text = [self payloadFor:indexPath][@"message"];
+    
+    return cell;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(nullable id)sender
