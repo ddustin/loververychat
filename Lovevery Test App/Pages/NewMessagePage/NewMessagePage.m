@@ -6,6 +6,7 @@
 //
 
 #import "NewMessagePage.h"
+#import "Messages.h"
 
 @interface NewMessagePage ()
 
@@ -25,7 +26,7 @@
                                message:@"please wait"
                                preferredStyle:UIAlertControllerStyleActionSheet];
 
-    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDestructive
                                    handler:^(UIAlertAction * action) {
         
         canceled = YES;
@@ -39,19 +40,18 @@
     
     __weak NewMessagePage *weakSelf = self;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [Messages.shared postMessage:self.user.text subject:self.subject.text message:self.message.text result:^(BOOL success) {
         
-        // Do message submit
-        
-        if(!canceled) {
-            [alert dismissViewControllerAnimated:NO completion:^{
+            if(success && !canceled) {
                 
-                NewMessagePage *strongSelf = weakSelf;
-                
-                [strongSelf.navigationController popViewControllerAnimated:YES];
-            }];
-        }
-    });
+                [alert dismissViewControllerAnimated:NO completion:^{
+                    
+                    NewMessagePage *strongSelf = weakSelf;
+                    
+                    [strongSelf.navigationController popViewControllerAnimated:YES];
+                }];
+            }
+    }];
 }
 
 @end

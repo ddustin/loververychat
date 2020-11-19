@@ -154,6 +154,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="message" destination="ceB-Ez-nvX" id="fZR-Gf-0tH"/>
+                        <outlet property="subject" destination="mDx-no-4Uq" id="3m0-HM-QkZ"/>
+                        <outlet property="user" destination="TU2-8c-sRa" id="8IM-hg-8Hw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTe-eV-Vj0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
