@@ -7,8 +7,7 @@
 
 #import "MessagesPage.h"
 #import "Messages.h"
-
-#define UNUSED __attribute__((unused))
+#import "misc.h"
 
 @interface MessagesPage ()
 
@@ -88,6 +87,14 @@
     message.text = [self payloadFor:indexPath][@"message"];
     
     return cell;
+}
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(nullable id)sender
+{
+    if([identifier isEqual:@"userMessages"] && self.user)
+        return NO;
+    
+    return YES;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(nullable id)sender

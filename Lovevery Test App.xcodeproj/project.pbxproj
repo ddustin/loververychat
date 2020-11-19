@@ -10,6 +10,7 @@
 		586D95082566FF7B000321CB /* MessagesPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 586D95072566FF7B000321CB /* MessagesPage.m */; };
 		586D950D2566FF88000321CB /* NewMessagePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 586D950C2566FF88000321CB /* NewMessagePage.m */; };
 		586D9515256703B3000321CB /* Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 586D9514256703B3000321CB /* Messages.m */; };
+		586D952025671FEA000321CB /* Lovevery_Test_App_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 586D951F25671FEA000321CB /* Lovevery_Test_App_UITests.m */; };
 		58FBB10B2566FA03000477E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FBB10A2566FA03000477E2 /* AppDelegate.m */; };
 		58FBB10E2566FA03000477E2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FBB10D2566FA03000477E2 /* SceneDelegate.m */; };
 		58FBB1142566FA03000477E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FBB1122566FA03000477E2 /* Main.storyboard */; };
@@ -18,6 +19,16 @@
 		58FBB11C2566FA05000477E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FBB11B2566FA05000477E2 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		586D952225671FEA000321CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58FBB0FE2566FA03000477E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58FBB1052566FA03000477E2;
+			remoteInfo = "Lovevery Test App";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		586D95062566FF7B000321CB /* MessagesPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesPage.h; sourceTree = "<group>"; };
 		586D95072566FF7B000321CB /* MessagesPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesPage.m; sourceTree = "<group>"; };
@@ -25,6 +36,10 @@
 		586D950C2566FF88000321CB /* NewMessagePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewMessagePage.m; sourceTree = "<group>"; };
 		586D9513256703B3000321CB /* Messages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Messages.h; sourceTree = "<group>"; };
 		586D9514256703B3000321CB /* Messages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Messages.m; sourceTree = "<group>"; };
+		586D9517256711D8000321CB /* misc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		586D951D25671FEA000321CB /* Lovevery Test App UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lovevery Test App UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		586D951F25671FEA000321CB /* Lovevery_Test_App_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lovevery_Test_App_UITests.m; sourceTree = "<group>"; };
+		586D952125671FEA000321CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58FBB1062566FA03000477E2 /* Lovevery Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lovevery Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FBB1092566FA03000477E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58FBB10A2566FA03000477E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,6 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		586D951A25671FEA000321CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58FBB1032566FA03000477E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,10 +106,20 @@
 			path = Messages;
 			sourceTree = "<group>";
 		};
+		586D951E25671FEA000321CB /* Lovevery Test App UITests */ = {
+			isa = PBXGroup;
+			children = (
+				586D951F25671FEA000321CB /* Lovevery_Test_App_UITests.m */,
+				586D952125671FEA000321CB /* Info.plist */,
+			);
+			path = "Lovevery Test App UITests";
+			sourceTree = "<group>";
+		};
 		58FBB0FD2566FA03000477E2 = {
 			isa = PBXGroup;
 			children = (
 				58FBB1082566FA03000477E2 /* Lovevery Test App */,
+				586D951E25671FEA000321CB /* Lovevery Test App UITests */,
 				58FBB1072566FA03000477E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				58FBB1062566FA03000477E2 /* Lovevery Test App.app */,
+				586D951D25671FEA000321CB /* Lovevery Test App UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +179,7 @@
 			children = (
 				58FBB1152566FA05000477E2 /* Assets.xcassets */,
 				58FBB11B2566FA05000477E2 /* main.m */,
+				586D9517256711D8000321CB /* misc.h */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -153,6 +187,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		586D951C25671FEA000321CB /* Lovevery Test App UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 586D952425671FEA000321CB /* Build configuration list for PBXNativeTarget "Lovevery Test App UITests" */;
+			buildPhases = (
+				586D951925671FEA000321CB /* Sources */,
+				586D951A25671FEA000321CB /* Frameworks */,
+				586D951B25671FEA000321CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				586D952325671FEA000321CB /* PBXTargetDependency */,
+			);
+			name = "Lovevery Test App UITests";
+			productName = "Lovevery Test App UITests";
+			productReference = 586D951D25671FEA000321CB /* Lovevery Test App UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		58FBB1052566FA03000477E2 /* Lovevery Test App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58FBB11F2566FA05000477E2 /* Build configuration list for PBXNativeTarget "Lovevery Test App" */;
@@ -178,6 +230,10 @@
 			attributes = {
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					586D951C25671FEA000321CB = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 58FBB1052566FA03000477E2;
+					};
 					58FBB1052566FA03000477E2 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -197,11 +253,19 @@
 			projectRoot = "";
 			targets = (
 				58FBB1052566FA03000477E2 /* Lovevery Test App */,
+				586D951C25671FEA000321CB /* Lovevery Test App UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		586D951B25671FEA000321CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58FBB1042566FA03000477E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +279,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		586D951925671FEA000321CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				586D952025671FEA000321CB /* Lovevery_Test_App_UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58FBB1022566FA03000477E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +301,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		586D952325671FEA000321CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58FBB1052566FA03000477E2 /* Lovevery Test App */;
+			targetProxy = 586D952225671FEA000321CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		58FBB1122566FA03000477E2 /* Main.storyboard */ = {
@@ -250,6 +330,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		586D952525671FEA000321CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 874LE5SV49;
+				INFOPLIST_FILE = "Lovevery Test App UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dustin.Lovevery-Test-App-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lovevery Test App";
+			};
+			name = Debug;
+		};
+		586D952625671FEA000321CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 874LE5SV49;
+				INFOPLIST_FILE = "Lovevery Test App UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dustin.Lovevery-Test-App-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lovevery Test App";
+			};
+			name = Release;
+		};
 		58FBB11D2566FA05000477E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -401,6 +517,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		586D952425671FEA000321CB /* Build configuration list for PBXNativeTarget "Lovevery Test App UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				586D952525671FEA000321CB /* Debug */,
+				586D952625671FEA000321CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		58FBB1012566FA03000477E2 /* Build configuration list for PBXProject "Lovevery Test App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
