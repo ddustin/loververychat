@@ -61,19 +61,59 @@
 		58FBB1082566FA03000477E2 /* Lovevery Test App */ = {
 			isa = PBXGroup;
 			children = (
+				58FBB1232566FA11000477E2 /* AppDelegate */,
+				58FBB12A2566FA39000477E2 /* Misc */,
+				58FBB1252566FA18000477E2 /* SceneDelegate */,
+				58FBB1282566FA2C000477E2 /* Storyboards */,
+				58FBB1272566FA24000477E2 /* ViewController */,
+			);
+			path = "Lovevery Test App";
+			sourceTree = "<group>";
+		};
+		58FBB1232566FA11000477E2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				58FBB1092566FA03000477E2 /* AppDelegate.h */,
 				58FBB10A2566FA03000477E2 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		58FBB1252566FA18000477E2 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				58FBB10C2566FA03000477E2 /* SceneDelegate.h */,
 				58FBB10D2566FA03000477E2 /* SceneDelegate.m */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		58FBB1272566FA24000477E2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				58FBB10F2566FA03000477E2 /* ViewController.h */,
 				58FBB1102566FA03000477E2 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		58FBB1282566FA2C000477E2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				58FBB1122566FA03000477E2 /* Main.storyboard */,
-				58FBB1152566FA05000477E2 /* Assets.xcassets */,
 				58FBB1172566FA05000477E2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		58FBB12A2566FA39000477E2 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				58FBB1152566FA05000477E2 /* Assets.xcassets */,
 				58FBB11A2566FA05000477E2 /* Info.plist */,
 				58FBB11B2566FA05000477E2 /* main.m */,
 			);
-			path = "Lovevery Test App";
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
