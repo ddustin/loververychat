@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		586D95082566FF7B000321CB /* MessagesPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 586D95072566FF7B000321CB /* MessagesPage.m */; };
+		586D950D2566FF88000321CB /* NewMessagePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 586D950C2566FF88000321CB /* NewMessagePage.m */; };
 		58FBB10B2566FA03000477E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FBB10A2566FA03000477E2 /* AppDelegate.m */; };
 		58FBB10E2566FA03000477E2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FBB10D2566FA03000477E2 /* SceneDelegate.m */; };
-		58FBB1112566FA03000477E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FBB1102566FA03000477E2 /* ViewController.m */; };
 		58FBB1142566FA03000477E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FBB1122566FA03000477E2 /* Main.storyboard */; };
 		58FBB1162566FA05000477E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58FBB1152566FA05000477E2 /* Assets.xcassets */; };
 		58FBB1192566FA05000477E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FBB1172566FA05000477E2 /* LaunchScreen.storyboard */; };
@@ -17,13 +18,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		586D95062566FF7B000321CB /* MessagesPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesPage.h; sourceTree = "<group>"; };
+		586D95072566FF7B000321CB /* MessagesPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesPage.m; sourceTree = "<group>"; };
+		586D950B2566FF88000321CB /* NewMessagePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewMessagePage.h; sourceTree = "<group>"; };
+		586D950C2566FF88000321CB /* NewMessagePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewMessagePage.m; sourceTree = "<group>"; };
 		58FBB1062566FA03000477E2 /* Lovevery Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lovevery Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FBB1092566FA03000477E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58FBB10A2566FA03000477E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		58FBB10C2566FA03000477E2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		58FBB10D2566FA03000477E2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		58FBB10F2566FA03000477E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		58FBB1102566FA03000477E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		58FBB1132566FA03000477E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58FBB1152566FA05000477E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58FBB1182566FA05000477E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		586D95042566FF51000321CB /* MessagesPage */ = {
+			isa = PBXGroup;
+			children = (
+				586D95062566FF7B000321CB /* MessagesPage.h */,
+				586D95072566FF7B000321CB /* MessagesPage.m */,
+			);
+			path = MessagesPage;
+			sourceTree = "<group>";
+		};
+		586D95052566FF57000321CB /* NewMessagePage */ = {
+			isa = PBXGroup;
+			children = (
+				586D950B2566FF88000321CB /* NewMessagePage.h */,
+				586D950C2566FF88000321CB /* NewMessagePage.m */,
+			);
+			path = NewMessagePage;
+			sourceTree = "<group>";
+		};
+		586D951025670031000321CB /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				586D95042566FF51000321CB /* MessagesPage */,
+				586D95052566FF57000321CB /* NewMessagePage */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		58FBB0FD2566FA03000477E2 = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				58FBB1232566FA11000477E2 /* AppDelegate */,
+				58FBB11A2566FA05000477E2 /* Info.plist */,
 				58FBB12A2566FA39000477E2 /* Misc */,
+				586D951025670031000321CB /* Pages */,
 				58FBB1252566FA18000477E2 /* SceneDelegate */,
 				58FBB1282566FA2C000477E2 /* Storyboards */,
-				58FBB1272566FA24000477E2 /* ViewController */,
 			);
 			path = "Lovevery Test App";
 			sourceTree = "<group>";
@@ -88,15 +119,6 @@
 			path = SceneDelegate;
 			sourceTree = "<group>";
 		};
-		58FBB1272566FA24000477E2 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				58FBB10F2566FA03000477E2 /* ViewController.h */,
-				58FBB1102566FA03000477E2 /* ViewController.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		58FBB1282566FA2C000477E2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				58FBB1152566FA05000477E2 /* Assets.xcassets */,
-				58FBB11A2566FA05000477E2 /* Info.plist */,
 				58FBB11B2566FA05000477E2 /* main.m */,
 			);
 			path = Misc;
@@ -185,8 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58FBB1112566FA03000477E2 /* ViewController.m in Sources */,
+				586D950D2566FF88000321CB /* NewMessagePage.m in Sources */,
 				58FBB10B2566FA03000477E2 /* AppDelegate.m in Sources */,
+				586D95082566FF7B000321CB /* MessagesPage.m in Sources */,
 				58FBB11C2566FA05000477E2 /* main.m in Sources */,
 				58FBB10E2566FA03000477E2 /* SceneDelegate.m in Sources */,
 			);
