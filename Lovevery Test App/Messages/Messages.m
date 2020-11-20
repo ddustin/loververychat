@@ -47,7 +47,7 @@
         
         object = object[@"body"] ? [NSJSONSerialization JSONObjectWithData:[object[@"body"] dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil] : nil;
         
-        if(user) {
+        if(user && object) {
             
             object = @{ user: object[@"message"] };
         }
