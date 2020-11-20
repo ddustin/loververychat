@@ -86,6 +86,10 @@
     subject.text = [NSString stringWithFormat:@"subject: %@", [self payloadFor:indexPath][@"subject"]];
     message.text = [self payloadFor:indexPath][@"message"];
     
+    user.accessibilityValue = user.text;
+    subject.accessibilityValue = subject.text;
+    message.accessibilityValue = message.text;
+    
     return cell;
 }
 
